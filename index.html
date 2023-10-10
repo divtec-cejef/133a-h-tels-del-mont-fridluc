@@ -16,6 +16,85 @@
 
     <!-- FORMULAIRE DE RESERVATION -->
     <!-- au cas ou t'aurais pas compris place ton fromulaire ici. A+ Manfred -->
+    <form action="https://kode.ch/getpost" method="post">
+        <ul>
+            <li>
+                <label for="bg">Hôtel </label>
+                <select name="lisHotel" id="bg">
+                    <option value="1.jpg" selected >-- Sélectionnez un hotel --</option>
+                    <option value="2.jpg">Hôtel City </option>
+                    <option value="3.jpg">Hôtel National</option>
+                    <option value="4.jpg">Hôtel Le Midi</option>
+                    <option value="5.jpg">Hôtel Victoria</option>
+                </select>
+            </li>
+            <li>
+                <label for="nbrChambre">Nombre de chambres :</label>
+                <input id="nbrChambre" name="nbrChambre" type="text">
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Type de chambre</legend>
+                <div>
+                    <label>
+                        <input type="radio" name="typeChambre[]" value="stdSimple">
+                        <span>Standard simple</span>
+                    </label>
+                </div>
+                    <div>
+                        <label>
+                            <input type="radio" name="typeChambre[]" value="stdDouble">
+                            <span>Standard double</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name="typeChambre[]" value="supSimple">
+                            <span>Supérieure simple</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name="typeChambre[]" value="supDouble">
+                            <span>Supérieure double</span>
+                        </label>
+                    </div>
+                </fieldset>
+            </li>
+            <fieldset>
+                <legend>Options disponibles</legend>
+                <div>
+                    <input type="checkbox" name="options" id="dejeuner" value="1">
+                    <label for="dejeuner">Petit déjeuner</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="options" id="tv" value="2">
+                    <label for="tv">TV</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="options" id="Journaux" value="3">
+                    <label for="Journaux">Journaux</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="options" id="Ordinateur" value="4">
+                    <label for="Ordinateur">Ordinateur</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="options" id="wifi" value="5">
+                    <label for="wifi">Accès wifi</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="options" id="animaux" value="6">
+                    <label for="animaux">Animaux de compagnie</label>
+                </div>
+            </fieldset>
+            </li>
+            <li>
+                <button type="reset">Reset</button>
+                <button type="submit">Réserver</button>
+            </li>
+        </ul>
+    </form>
 </div>
 
 <!-- RESERVATION -->
@@ -27,7 +106,7 @@
 
     <h2></h2><!-- NOM DE L'HOTEL SELECTIONNE -->
 
-    <!-- 	Et oui, il n'y a pas d'id pour cet élément h2, mais pas touche au code, non non non !
+    <!--    Et oui, il n'y a pas d'id pour cet élément h2, mais pas touche au code, non non non !
     Mais vous allez trouver une solution, n'est-ce pas ? Bonne chance ;-)
     -->
 
